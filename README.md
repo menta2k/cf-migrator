@@ -68,7 +68,7 @@ Make sure your token has access to **both** source and destination zones:
 Export WAF rules from a zone to a JSON file:
 
 ```bash
-python cloudflare_waf_migrator_v2.py export \
+python cloudflare_waf_migrator.py export \
   --token YOUR_API_TOKEN \
   --zone SOURCE_ZONE_ID \
   --output rules.json
@@ -79,7 +79,7 @@ python cloudflare_waf_migrator_v2.py export \
 Import rules from a JSON file into a zone:
 
 ```bash
-python cloudflare_waf_migrator_v2.py import \
+python cloudflare_waf_migrator.py import \
   --token YOUR_API_TOKEN \
   --zone DEST_ZONE_ID \
   --input rules.json
@@ -90,7 +90,7 @@ python cloudflare_waf_migrator_v2.py import \
 Preview what would be imported without making changes:
 
 ```bash
-python cloudflare_waf_migrator_v2.py import \
+python cloudflare_waf_migrator.py import \
   --token YOUR_API_TOKEN \
   --zone DEST_ZONE_ID \
   --input rules.json \
@@ -102,7 +102,7 @@ python cloudflare_waf_migrator_v2.py import \
 Export and import in one command:
 
 ```bash
-python cloudflare_waf_migrator_v2.py migrate \
+python cloudflare_waf_migrator.py migrate \
   --token YOUR_API_TOKEN \
   --source SOURCE_ZONE_ID \
   --dest DEST_ZONE_ID
@@ -111,7 +111,7 @@ python cloudflare_waf_migrator_v2.py migrate \
 With dry run:
 
 ```bash
-python cloudflare_waf_migrator_v2.py migrate \
+python cloudflare_waf_migrator.py migrate \
   --token YOUR_API_TOKEN \
   --source SOURCE_ZONE_ID \
   --dest DEST_ZONE_ID \
@@ -121,7 +121,7 @@ python cloudflare_waf_migrator_v2.py migrate \
 Save export to file during migration:
 
 ```bash
-python cloudflare_waf_migrator_v2.py migrate \
+python cloudflare_waf_migrator.py migrate \
   --token YOUR_API_TOKEN \
   --source SOURCE_ZONE_ID \
   --dest DEST_ZONE_ID \
