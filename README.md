@@ -211,7 +211,7 @@ Use `inspect_waf.py` to check if the ruleset actually has rules.
 
 | File | Description |
 |------|-------------|
-| `cloudflare_waf_migrator_v2.py` | Main migration tool |
+| `cloudflare_waf_migrator.py` | Main migration tool |
 | `inspect_waf.py` | Inspect rules in a zone |
 | `requirements.txt` | Python dependencies |
 
